@@ -4,6 +4,7 @@ var path = require ('path')
 const express = require('express')
 const session = require('express-session')
 const bodyParser = require('body-parser')
+const cidadesRS = require('./cidadesRS')
 
 const user = [{username: 'admin', password: '123'}]
 
@@ -45,6 +46,10 @@ app.post('/validation', (req, res) => {
         res.writeHead(400); 
         res.end();
     }
+})
+
+app.get('/cidadesRS', (req, res) => {
+    res.send(cidadesRS)
 })
 
 app.get('/', (req, res)=>{
