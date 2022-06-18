@@ -6,7 +6,13 @@ const session = require('express-session')
 const bodyParser = require('body-parser')
 const cidadesRS = require('./cidadesRS')
 
+
 const user = [{username: 'admin', password: '123'}]
+var name1 =''
+var adress1=''
+var city1 = ''
+var birthdate1 =''
+
 
 app.use(session({
     secret:'dsjafjhsdahkfgh2k34g3h2k123jkhkfdsakljh1231___55544451dsa'
@@ -53,10 +59,15 @@ app.get('/cidadesRS', (req, res) => {
 })
 
 app.get('/', (req, res)=>{
-    if(req.session.login){
-        res.render('home', {login: user[0].username})
-    }else{
-        res.render('index')
-    }
+    res.render('index')
+})
+
+app.post('/home', (req, res) => {
+    name1 = req.body.name 
+    adress1 = req.body.adress
+    city1 = req.body.city
+    birthdate1 = req.body.birthdate
+    res.render('home', {login: user[0].username, name: name1, adress: adress1, city: city1, birthdate: birthdate1})
+    
 })
 }
