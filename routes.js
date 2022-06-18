@@ -54,9 +54,9 @@ app.get('/cidadesRS', (req, res) => {
 
 app.get('/', (req, res)=>{
     if(req.session.login){
-        res.render('logado', {login: user[0].username})
+        res.render('home', {login: user[0].username})
     }else{
-        res.render('home')
+        res.render('index')
     }
 })
 }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Page</title>
+</head>
+<body style="background-color: #301934 ;">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top" >Melhos dos Vinhos</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><i id="instagram" style="margin-left: 10px;" class="fab fa-instagram text-light fa-lg"></i></li>
+                        <li class="nav-item"><i id="whatsapp" style="margin-left: 10px;" class="fab fa-whatsapp text-light fa-lg"></i></li>
+                        <li class="nav-item">
+                        <form action="/signin" method="get" class="px-4">
+                            <button type="submit" style="border: 0px white; background-color: transparent;cursor: pointer; color:white"> Login </button>
+                        </form></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Os melhores vinhos de Passo Fundo e região</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white mb-5">Compre diretamente da melhor Vinícola de Passo Fundo, descubra mais sobre nos apertando abaixo</p>
+                        <a class="btn btn-light btn-xl" href="#about">Descubra mais</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+</div>
+</body>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    @keyframes pop {
+        50%  {transform: scale(1.1);}
+    }
+    h2 {  
+        animation: 0.5s ease-in 0s 1 pop;
+
+        padding: 30px;
+    }
+    
+    i:hover{
+        animation: 0.5s ease-in 0s 5 pop;
+        cursor: pointer;
+    }
+    button:hover, a.btn:hover{
+        animation: 0.5s ease-in 0s 5 pop;
+
+    }
+    .card{
+        background-image: url('https://bestofwines.com/media/images/large/517-Best%20of%20Wines%20-%20fine%20wine_.jpg');   
+        background-size: cover;
+        }
+    .card::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.25);
+    }
+
+    header.masthead {
+        margin-top: -1rem;
+        padding-top: 14rem;
+        padding-bottom: calc(10rem - 4.5rem);
+        background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://r4.wallpaperflare.com/wallpaper/990/26/420/grapes-water-drops-macro-fruit-wallpaper-d846ac2aef6cd749feb0a9a2e2d94b00.jpg?timestamp=1655514905696");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    header.masthead h1, header.masthead .h1 {
+    font-size: 2.25rem;
+    }
+    @media (min-width: 992px) {
+    header.masthead {
+        height: 105vh;
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+    }
+    header.masthead p {
+        font-size: 1.30rem;
+    }
+    header.masthead h1, header.masthead .h1 {
+        font-size: 3rem;
+    }
+    }
+    @media (min-width: 1200px) {
+    header.masthead h1, header.masthead .h1 {
+        font-size: 3.5rem;
+    }
+    }
+    #mainNav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+    }
+    #mainNav .navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 900;
+    font-size: 40px;
+    color: #212529;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+    color: #6c757d;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.75rem 0;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+    color: #f4623a;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #f4623a !important;
+    }
+    @media (min-width: 992px) {
+    #mainNav {
+        box-shadow: none;
+        background-color: transparent;
+    }
+    #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    #mainNav .navbar-brand:hover {
+        color: #fff;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        padding: 0 1rem;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link:hover {
+        color: #fff;
+    }
+    #mainNav .navbar-nav .nav-item:last-child .nav-link {
+        padding-right: 0;
+    }
+    #mainNav.navbar-shrink {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #212529;
+    }
+    #mainNav.navbar-shrink .navbar-brand:hover {
+        color: #f4623a;
+    }
+    #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+        color: #212529;
+    }
+    #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+        color: #f4623a;
+    }
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $('#instagram').click(function(e){
+            e.preventDefault();
+         window.open("http://www.instagram.com/") 
+        })
+        $('#whatsapp').click(function(e){
+            e.preventDefault();
+         window.open("http://www.whatsapp.com/") 
+        })
+     })
+</script>
