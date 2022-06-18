@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Home Page</title>
 </head>
 <body>
     <section class="vh-100" style="background-color: #301934 ;">
         <nav class="navbar navbar-light bg-#301934 text-center px-2">
+            
+            <div style="margin-top: -100px">
+                <i id="instagram" style="margin-left: 10px;" class="fab fa-instagram text-light fa-lg"></i>
+                <i id="whatsapp" style="margin-left: 10px;" class="fab fa-whatsapp text-light fa-lg"></i>
+            </div> 
+            
             <span class="mx-auto">
                 <img src="https://www.pinclipart.com/picdir/big/58-583088_skeleton-keys-png-transparent-drawing-of-key-clipart.png" style="filter: opacity(0.4) drop-shadow(0 0 0 rgb(255, 255, 255)); " width="150" height="50" alt="">
                 <h2 class="mx-auto mt-3" style="font-family: 'Great Vibes', cursive; color: white">Melhos dos Vinhos</h2>
             </span>
             <form action="/signin" method="get" style="margin-top: -60px" class="px-4">
-                <button type="submit" style="all: unset; cursor: pointer; color:white"> Login </button>
+                <button type="submit" style="border: 0px white; background-color: transparent;cursor: pointer; color:white"> Login </button>
             </form> 
         </nav>
         <hr style="color:white; margin-top: -15px">
@@ -22,6 +29,7 @@
 </body>
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </html>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
@@ -34,8 +42,26 @@
 
         padding: 30px;
     }
+    
+    i:hover{
+        animation: 0.5s ease-in 0s 5 pop;
+        cursor: pointer;
+    }
+    button:hover{
+        animation: 0.5s ease-in 0s 5 pop;
 
+    }
+    
 </style>
 <script>
-    
+    $(document).ready(function(){
+        $('#instagram').click(function(e){
+            e.preventDefault();
+         window.open("http://www.instagram.com/") 
+        })
+        $('#whatsapp').click(function(e){
+            e.preventDefault();
+         window.open("http://www.whatsapp.com/") 
+        })
+     })
 </script>
