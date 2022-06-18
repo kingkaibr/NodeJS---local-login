@@ -41,7 +41,7 @@ app.post('/signin', (req, res) => {
 })
 
 app.post('/validation', (req, res) => {
-    if(req.body.password != user[0].password && req.body.username != user[0].username){
+    if(req.body.password != user[0].password || req.body.username != user[0].username){
         res.writeHead(400); 
         res.end();
     }

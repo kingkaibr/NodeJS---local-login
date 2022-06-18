@@ -86,7 +86,6 @@
       $('#error').hide()
         $('body').slideDown(800);
         $('#teste').on("click", function (){
-          console.log($('#username').val())
           $.post('validation', {
               username: $('#username').val(),
               password: $('#password').val()
